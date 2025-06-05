@@ -9,12 +9,12 @@ function Card({ title, author, editionCount, cover_id }) {
         : noImg;
 
     return (
-        <div className='cursor-pointer'>
-            <img className="mb-2 w-full h-64 object-contain rounded" src={imageUrl} alt="" />
-            <h2 className='font-bold '>{author[0]?.name }</h2>
-            <p className='max-w-[300px]'>{title}</p>
+        <div className='bg-white dark:bg-gray-800 cursor-pointer h-[450px] rounded-xl p-4 shadow-md w-64 hover:scale-105 transition-transform duration-300'>
+            <img className="mb-4 w-full h-64 object-contain rounded" src={imageUrl} alt="" />
+            <h2 className='font-semibold text-lg text-gray-800 dark:text-white mb-2'>{author[0]?.name }</h2>
+            <p className='text-gray-600 dark:text-gray-300 mb-2'>{title}</p>
             <p>
-                <span className='font-bold'>Edition count:</span > {editionCount}
+                <span className='text-sm text-gray-500 dark:text-gray-400'>Edition count:</span > {editionCount}
             </p>
         </div>
     )

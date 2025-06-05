@@ -35,17 +35,17 @@ function App() {
     <div className="App">
 
       <div className='max-w-[1440px] m-auto p-3 mt-5'>
-        <h2 className='text-center text-[50px]'>Book genres</h2>
-        <div className='flex gap-[20px] justify-center items-center mt-[60px]'>
+        <h2 className='text-center text-4xl font-bold'>Book genres</h2>
+        <div className='flex flex-wrap gap-[20px] justify-center items-center mt-[60px]'>
           {subject.map((e) => {
             return (
-              <button onClick={() => setSubject(e)} className={`btn ${selectedSubject === e ? `activeBtn` : ''}`} >{e}</button>
+              <button key={e} onClick={() => setSubject(e)} className={`btn cursor-pointer ${selectedSubject === e ? `activeBtn` : ''}`} >{e}</button>
             )
           })}
         </div>
       </div>
 
-      <h1 className='text-center text-[50px] mt-5'>Library Books</h1>
+      <h1 className='text-center text-4xl font-bold mt-10'>Library Books</h1>
       <div className="max-w-[1440px] m-auto p-3 mt-5" >
         <div className='flex flex-wrap justify-center items-center gap-[20px] text-start mt-[60px]'>
           {data.map((card) => (

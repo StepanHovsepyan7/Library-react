@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 body {
   background-color: #212121;
   color: white;
@@ -7,16 +8,11 @@ body {
   border: 1px solid white;
   width: 100px;
   height: 30px;
-  cursor: pointer;
   border-radius: 15px;
 }
 
 .activeBtn {
   border: 1px solid rgba(255, 255, 255, 0);
-  width: 100px;
-  height: 30px;
-  cursor: pointer;
-  border-radius: 15px;
   color: black;
   background-color: white;
   transition: 0.3s ease-in;
