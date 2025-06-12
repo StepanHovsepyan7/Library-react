@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 body {
   background-color: #212121;
   color: white;
@@ -9,6 +11,8 @@ body {
   width: 100px;
   height: 30px;
   border-radius: 15px;
+    font-family: "Courgette", cursive;
+
 }
 
 .activeBtn {
@@ -17,3 +21,8 @@ body {
   background-color: white;
   transition: 0.3s ease-in;
 }
+
+.title {
+  font-family: "Lobster", sans-serif;
+}
+
