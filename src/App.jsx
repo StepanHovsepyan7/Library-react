@@ -29,10 +29,15 @@ function App({ searchItem, setSearchItem }) {
           .catch(console.error);
       }, 1000);
     } else {
-      setData([]);
+      fetch(`https://openlibrary.org/subjects/${selectedSubject}.json?limit=20`)
+        .then(res => res.json())
+        .then(res => {
+          setData(res.works || []);
+          AOS.refresh();
+        });
     }
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer)
   }, [searchItem]);
 
   useEffect(() => {
